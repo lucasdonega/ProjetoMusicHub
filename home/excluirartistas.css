@@ -1,0 +1,128 @@
+/* body {
+    background-color:  #0C1821;
+}
+ */
+
+.conteudo {
+
+
+    background-size: cover;
+
+    height: 90vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.excluir {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--fundos);
+
+    width: 35%;
+
+    border-radius: 30px;
+
+    padding: 50px 100px;
+
+    gap: 50px;
+}
+
+.excluir-artistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.excluir-artistas img { 
+  margin-bottom: 0px; 
+} 
+
+.excluir-artistas h1 { 
+  font-size: 1.5em; 
+  margin-bottom: -20px;  
+
+.excluir-artistas p { 
+  font-size: 1em; 
+  margin-bottom: 40px; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.campo label {
+    color: var(--azul-escuro);
+    font-size: 1em;
+    font-weight: 700;
+
+}
+
+.campo input {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    padding: 0 20px;
+
+    font-size: 1em;
+
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #00000050;
+    font-size: italic;
+}
+
+/*campo senha*/
+
+.campo-senha {
+    position: relative;
+
+}
+
+.botao-excluir {
+    width: 100%;
+    height: 50px;
+     
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #ff0000;
+    color: var(--branco);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    transition: transform 0,2s;
+}
+
+.botao-excluir:hover {
+    cursor: pointer;
+    background-color: #344957;
+    transform: translateY(-3px);
+}
