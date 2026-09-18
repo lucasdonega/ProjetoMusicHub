@@ -1,0 +1,11 @@
+.cabecalho span {
+    color: var(--cor-destaque);
+}
+
+.banner-principal .texto-banner span {
+    color: var(--cor-destaque);
+}
+
+.banner-principal {
+background-image: url("../imgs/banner_principal\ -\ MusicHub.svg");
+}
