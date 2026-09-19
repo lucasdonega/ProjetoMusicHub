@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabecalho e barra de Navegacao */
+/* cabecalho e nav */
 .cabecalho {
   width: 100%;
   padding: 24px 48px;
@@ -28,7 +28,6 @@ body {
   gap: 12px;
   text-decoration: none;
   color: #ffffff;
-  user-select: none;
 }
 
 .imagem-logo-cabecalho {
@@ -46,7 +45,7 @@ body {
   letter-spacing: -0.3px;
 }
 
-/* Area Principal */
+/*Principal */
 .area-principal {
   flex: 1;
   display: flex;
@@ -55,7 +54,7 @@ body {
   padding: 20px 20px 40px 20px;
 }
 
-/* Cartao Central */
+
 .cartao-cadastro {
   background-color: #9ba6b6;
   width: 100%;
@@ -69,7 +68,7 @@ body {
   color: #121826;
 }
 
-/* Logo Central */
+/* logo central */
 .container-logo-central {
   width: 110px;
   height: 110px;
@@ -106,7 +105,7 @@ body {
   margin-bottom: 36px;
 }
 
-/* Formulario e Grelha */
+/* formulario  */
 .formulario-cadastro {
   width: 100%;
   display: flex;
@@ -128,6 +127,10 @@ body {
   position: relative;
 }
 
+/* Faz informação adicional ocupar as 2 colunas */
+.largura-total {
+  grid-column: span 2;
+}
 
 .rotulo-campo {
   font-size: 0.9rem;
@@ -156,7 +159,6 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 123, 153, 0.25);
 }
 
-
 /* placeholder da caixinha */
 .caixa-texto::placeholder {
   color: #838e9e;
@@ -167,8 +169,6 @@ body {
   position: relative;
   width: 100%;
 }
-
-
 
 .botao-ocultar-senha {
   position: absolute;
@@ -184,8 +184,6 @@ body {
   padding: 4px;
 }
 
-
-
 .texto-ajuda {
   font-size: 1rem;
   color: #374151;
@@ -194,7 +192,7 @@ body {
   font-weight: 500;
 }
 
-/* Checkbox dos Termos */
+/* caixiha dos Termos */
 .container-termos {
   display: flex;
   align-items: center;
@@ -283,6 +281,10 @@ body {
   .formulario {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .largura-total {
+    grid-column: span 1;
   }
 
   .container-termos {
