@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabecalho e barra de Navegacao */
+/* cabecalho e nav */
 .cabecalho {
   width: 100%;
   padding: 24px 48px;
@@ -128,6 +128,10 @@ body {
   position: relative;
 }
 
+/* Faz o campo "Informação Adicional" ocupar as 2 colunas */
+.largura-total {
+  grid-column: span 2;
+}
 
 .rotulo-campo {
   font-size: 0.9rem;
@@ -156,7 +160,6 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 123, 153, 0.25);
 }
 
-
 /* placeholder da caixinha */
 .caixa-texto::placeholder {
   color: #838e9e;
@@ -167,8 +170,6 @@ body {
   position: relative;
   width: 100%;
 }
-
-
 
 .botao-ocultar-senha {
   position: absolute;
@@ -184,8 +185,6 @@ body {
   padding: 4px;
 }
 
-
-
 .texto-ajuda {
   font-size: 1rem;
   color: #374151;
@@ -194,7 +193,7 @@ body {
   font-weight: 500;
 }
 
-/* Checkbox dos Termos */
+/* caixiha dos Termos */
 .container-termos {
   display: flex;
   align-items: center;
@@ -283,6 +282,10 @@ body {
   .formulario {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .largura-total {
+    grid-column: span 1;
   }
 
   .container-termos {
