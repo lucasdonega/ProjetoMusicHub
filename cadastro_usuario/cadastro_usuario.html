@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Cadastro</title>
+    <link rel="stylesheet" href="cadastro_usuario.css">
+    <link rel="shortcut icon" href="../imgs/ad35a714-13a4-45ea-b131-c7d58485ca61 4.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="#">
+            <img src="../imgs/Logo (1).svg" alt="Logo do site do MusicHub">
+        </a>
+
+        <nav class="navegacao">
+            <p>Login</p>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="cadastro">
+            <div class="cadastro-cabecalho">
+                <img src="../imgs/ad35a714-13a4-45ea-b131-c7d58485ca61 4.svg" alt="Logo MusicHub">
+                <h1>Bem vindo(a) ao MusicHub</h1>
+                <p>Faça seu cadastro para ouvir as melhores músicas</p>
+            </div>
+
+            <form>
+                <div class="campo1">
+
+                    <div class="campo">
+                        <label for="nome">Nome de usuário</label>
+                        <input type="text" id="nome" placeholder="Ex: João Silva">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Ex: JoaoSilva@gmail.com">
+                    </div>
+
+                </div>
+
+                <div class="campo2">
+
+                <div class="campo">
+                    <label for="email">Senha</label>
+
+                    <div class="campo-senha">
+                        <input type="password" id="senha" placeholder="********">
+                        <button type="button" id="mostrar-senha" class="botao-olho">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye">
+                                <path
+                                    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Confirmar senha</label>
+
+                    <div class="campo-senha">
+                        <input type="password" id="confirmar-senha" placeholder="********">
+                        <button type="button" id="mostrar-confirmar-senha" class="botao-olho">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye">
+                                <path
+                                    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="novidades">
+                    <label for="novidades">Eu li e concordo com os <span class="termos">Termos de Uso e Política de Privacidade</span> do
+                        MusicHub.</label>
+                </div>
+
+                <button type="submit" class="botao-entrar">Entrar</button>
+                <p class="ou">Ou</p>
+                <button class="botao-google">
+                    <img src="../imgs/google-logo.svg" alt="Logo da google">Continuar com Google
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="cadastro_usuario.js"></script>
+
+</body>
+
+</html>
