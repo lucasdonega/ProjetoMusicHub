@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ONFIGURAÇÃO DA PAGINA */
 
 body {
     min-height: 100vh;
@@ -15,19 +11,203 @@ body {
     height: 90vh;
 }
 
+/* CABEÇALHO */
+
 .cabecalho{
     display: flex;
+    justify-content: space-between;
     height: 10vh;
-    background-color: blue;
+    
+    align-items: center;
+ 
+    padding: 0 10px 0 5px;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    
+
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.logo h1{
+    color: var(--cor-texto);
+    font-size: 15px;
 }
 
+
+.navegacao-header input{
+    width: 200px;
+    height: 20px;
+    border-radius: 25px;
+    background: transparent;
+    color: var(--cor-texto);
+    font-size: 10px;
+    
+}
+
+.perfil{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.sobre-nos{
+    font-size: 10px;
+}
+
+.perfil i{
+    
+  
+  
+}
+
+/* MENU LATERAL */
 .menu-lateral{
+    height: 100%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    width: 20vh;
-    background-color: aqua;
+    width: 40vh;
+    padding: 0px 5px;
 }
+.inicio{
+    display: flex;
+    
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 15px;
+    gap: 5px;
+    padding: 10px;
+}
+.inicio a{
+    font-size: 10px;
+}
+.explorar{
+    display: flex;
+
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 15px;
+    gap: 5px;
+    padding: 10px;
+}
+.explorar a{
+    font-size: 10px;
+}
+
+.biblioteca{
+    display: flex;
+
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 15px;
+    gap: 5px;
+    padding: 10px;
+}
+
+.biblioteca a {
+    font-size: 10px;
+}
+
+.minha-playlist{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    color: var(--cor-texto);
+    gap: 5px;
+}
+.add-playlist{
+    display: flex;
+    gap: 50px;
+    font-size: 10px;
+    align-items: center; 
+    color: var(--cor-texto); 
+}
+.playlists{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.playlist{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--cor-texto);
+    font-size: 10px;
+}
+.icone{
+    display: flex;
+    height: 15px;
+    width: 20px;
+    background-color: var(--cor-destaque);
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    
+}
+.icone i{
+    background: transparent;
+}
+
+.ouvindo{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 130px;
+}
+/* CONTEUDO DA PAGINA */
 .conteudo{
-    width: 90%;
-    background-color: brown;
+    flex: 1;
+   height: 100%;
+    
+    padding: 0px 10px 0 5px;
+    
 }
+.banner{
+    position: relative;
+    width: 100%;
+}
+.banner img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+ }
+ .conteudo-banner{
+    position: absolute;
+    bottom: 30px; /* Distancia a parte de baixo*/
+    left: 15px;/* Distancia a esqueerda*/
+    z-index: 2;/* Garante que fique por cima de imagem*/
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: var(--cor-texto);
+    background-color: transparent;
+ }
+.conteudo-banner h2,
+.conteudo-banner p{
+    background-color: transparent;
+}
+.btn-ouvir{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+/* FOOTER */
