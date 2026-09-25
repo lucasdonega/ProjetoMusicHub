@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabecalho e barra de Navegacao */
+/* cabecalho e nav */
 .cabecalho {
   width: 100%;
   padding: 24px 48px;
@@ -143,7 +143,7 @@ body {
 .caixa-texto {
   width: 100%;
   height: 48px;
-  padding: 0 16px;
+  padding: 0 42px 0 16px;
   border-radius: 10px;
   border: 1px solid transparent;
   outline: none;
@@ -185,15 +185,19 @@ body {
   padding: 4px;
 }
 
+.botao-ocultar-senha:hover {
+  color: #111827;
+}
+
 .texto-ajuda {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #374151;
   margin-top: 6px;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
 }
 
-/* Checkbox dos Termos */
+/* caixiha dos Termos */
 .container-termos {
   display: flex;
   align-items: center;
@@ -300,3 +304,4 @@ body {
     max-width: 100%;
   }
 }
+/*renomeando o commit
