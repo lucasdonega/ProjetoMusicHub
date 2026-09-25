@@ -48,6 +48,16 @@ body {
     font-size: 25px;
     align-items: center;
 }
+.cabecalho .navegacao #inscrever:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.cabecalho .navegacao #entrar:hover {
+    cursor: pointer;
+    background-color: #DEDEDE;
+    transform: translateY(-3px);
+}
 
 /* BANNER PRINCIPAL */
 
