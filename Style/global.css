@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -10,4 +10,46 @@
     --cor-destaque: #6229D4;
     --cor-texto: #FFFFFF;
     --cor-secundaria: #D9D9D9;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Deixar os textos brancos ou roxos */
+
+p {
+    color: var(--cor-texto);
+}
+
+h3 {
+    color: var(--cor-texto);
+}
+
+span {
+    color: var(--cor-destaque);
+}
+
+/* CABECALHO */
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    padding: 30px;
+}
+.navegacao #entrar {
+    color: #000000;
+}
+
+.navegacao #inscrever {
+    color: var(--cor-texto);
+}
+
+/* BANNER PRINCIPAL */
+
+.banner-principal {
+    padding: 70px;
 }
