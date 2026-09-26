@@ -70,7 +70,7 @@ body {
 }
 
 /* Logo Central */
-.container-logo-central {
+.caixinha-logo-centro {
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -166,7 +166,7 @@ body {
   font-size: 0.9rem;
 }
 
-.container-senha {
+.caixinha-senha {
   position: relative;
   width: 100%;
 }
@@ -194,7 +194,7 @@ body {
 }
 
 /* Checkbox dos Termos */
-.container-termos {
+.caixinha-termos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,7 +265,7 @@ body {
     border-radius: 16px;
   }
 
-  .container-logo-central {
+  .caixinha-logo-centro {
     width: 90px;
     height: 90px;
   }
@@ -288,7 +288,7 @@ body {
     grid-column: span 1;
   }
 
-  .container-termos {
+  .caixinha-termos {
     align-items: flex-start;
   }
 
