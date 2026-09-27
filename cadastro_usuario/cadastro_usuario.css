@@ -5,19 +5,17 @@ body {
 }
 
 .conteudo {
-    background-image: url(../imgs/banner-login.png);
-
+    margin-top: 100px;
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 90vh;
+    min-height: 90vh;   /* era height: 90vh */
+    padding: 50px 0;    /* dá espaço extra em vez de altura travada */
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-/* Área de Cadastro */
 
 .cadastro {
     display: flex;
@@ -33,9 +31,7 @@ body {
 
     gap: 20px;
 
-    transform: translateY(80px);
-
-
+    margin-bottom: 100px;
 }
 
 /* CABEÇALHO DO LOGIN */
@@ -175,6 +171,8 @@ form {
 
     transform: translateY(-15px);
 
+    font-weight: 600;
+
 }
 
 .botao-google:hover {
@@ -213,6 +211,7 @@ form {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    margin-top: 50px;
 }
 
 .campo2 {
@@ -247,7 +246,7 @@ form {
 .campo1 .campo,
 .campo2 .campo {
     flex: 1 1 350px;
-    
+
 }
 
 .campo1,
