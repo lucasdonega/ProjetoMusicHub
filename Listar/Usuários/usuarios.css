@@ -33,12 +33,15 @@ body {
   user-select: none;
 }
 
+/* Logo do cabeçalho sem fundo circular ou corte */
 .imagem-logo-cabecalho {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
 }
 
 .texto-marca {
@@ -164,14 +167,14 @@ body {
 }
 
 .botao-inativar {
- background: linear-gradient(180deg, #b11500 0%, #740000 100%);
+  background: linear-gradient(180deg, #b11500 0%, #740000 100%);
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(119, 0, 0, 0.4);
   min-width: 148px;
 }
 
 .botao-inativar:hover {
- background: linear-gradient(180deg, #e60000 0%, #8e0000 100%);
+  background: linear-gradient(180deg, #e60000 0%, #8e0000 100%);
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(119, 0, 0, 0.4);
 }
