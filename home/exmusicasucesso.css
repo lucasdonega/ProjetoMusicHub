@@ -20,13 +20,6 @@ body {
 
     color: #000;
 }
-
-
-
-/* =========================
-   CABEÇALHO
-========================= */
-
 .cabecalho {
     width: 100%;
     height: 60px;
@@ -58,12 +51,6 @@ body {
     font-weight: 700;
 }
 
-
-
-/* =========================
-   MENSAGEM DE SUCESSO
-========================= */
-
 .mensagem-sucesso {
     position: absolute;
 
@@ -94,12 +81,6 @@ body {
     white-space: nowrap;
 }
 
-
-
-/* =========================
-   CONTEÚDO
-========================= */
-
 .conteudo {
     min-height: calc(100vh - 60px);
 
@@ -111,12 +92,6 @@ body {
 
     padding: 20px;
 }
-
-
-
-/* =========================
-   CARD
-========================= */
 
 .excluir {
     width: 520px;
@@ -136,12 +111,6 @@ body {
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.3);
 }
-
-
-
-/* =========================
-   MÚSICA
-========================= */
 
 .excluir-musicas {
     display: flex;
@@ -178,12 +147,6 @@ body {
     color: #333;
 }
 
-
-
-/* =========================
-   FORMULÁRIO
-========================= */
-
 form {
     width: 100%;
 
@@ -193,13 +156,6 @@ form {
 
     margin-top: 36px;
 }
-
-
-
-/* =========================
-   CAMPO
-========================= */
-
 .campo {
     display: flex;
 
@@ -241,12 +197,6 @@ form {
     color: #999;
 }
 
-
-
-/* =========================
-   MENSAGEM DE EXCLUSÃO
-========================= */
-
 .mensagem-exclusao {
     display: flex;
 
@@ -272,13 +222,6 @@ form {
 .mensagem-exclusao strong {
     font-weight: 900;
 }
-
-
-
-/* =========================
-   BOTÃO
-========================= */
-
 .botao-excluir {
     width: 100%;
 
@@ -319,12 +262,6 @@ form {
 .btn-excluir:active {
     transform: translateY(0);
 }
-
-
-
-/* =========================
-   RESPONSIVO
-========================= */
 
 @media (max-width: 600px) {
 
