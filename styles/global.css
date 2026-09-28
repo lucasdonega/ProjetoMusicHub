@@ -23,13 +23,6 @@ html {
 body { 
     font-family: "Montserrat", sans-serif; 
  
-    --fundo-degrade: radial-gradient( 
-        circle at center, 
-        #1C3443 0%, 
-        #102532 35%, 
-        #050A0F 100% 
-    ); 
-    background: var(--fundo-degrade); 
 }
 
 .cabecalho {
@@ -45,5 +38,5 @@ body {
 
     padding: 0 120px;
 
-    height: 10vh; /* 10% da visualização vertical do dispositivo/navegador */
+    height: 10vh;
 }
