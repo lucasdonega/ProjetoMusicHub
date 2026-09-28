@@ -8,7 +8,13 @@ body,html {
 
 .divisao{
     display: flex;
-    height: 90vh;
+    
+}
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
 }
 
 /* CABEÇALHO */
@@ -17,7 +23,9 @@ body,html {
     display: flex;
     justify-content: space-between;
     height: 10vh;
-    
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: 0 10px 0 0px;
     align-items: center;
  
@@ -27,7 +35,8 @@ body,html {
     align-items: center;
 }
 .logo img{
-    height: 75px;
+    
+    height: 65px;
 }
 .logo h1{
     color: var(--cor-texto);
@@ -67,11 +76,18 @@ body,html {
     display: flex;
     flex-direction: column;
     width: 40vh;
-    padding: 0 10px 0 10px;
+    padding: 0 0 0 10px;
+      position: sticky;
+    top: 10vh;
+    height: 90vh;
+    align-self: flex-start;
+    overflow-y: auto;
+    z-index: 5;
 }
 .inicio{
     display: flex;
-    
+    cursor: pointer;
+    transition: background-color 0.2s ease;
     width: 250px;
     height: 45px;
     align-items: center;
@@ -79,14 +95,17 @@ body,html {
     font-size: 25px;
     gap: 10px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
+    
 }
 .inicio a{
     font-size: 20px;
 }
+
 .explorar{
     display: flex;
-    
+    cursor: pointer;
+    transition: background-color 0.2s ease;
     width: 250px;
     height: 45px;
     align-items: center;
@@ -103,7 +122,8 @@ body,html {
 
 .biblioteca{
     display: flex;
-
+    cursor: pointer;
+    transition: background-color 0.2s ease;
     width: 250px;
     height: 45px;
     align-items: center;
@@ -116,6 +136,17 @@ body,html {
 
 .biblioteca a {
     font-size: 20px;
+}
+
+.inicio:hover,
+.explorar:hover,
+.biblioteca:hover{
+    background-color: var(--cor-destaque);
+}
+.inicio i,
+.explorar i,
+.biblioteca i{
+    background-color: transparent;
 }
 
 .minha-playlist{
@@ -203,9 +234,9 @@ body,html {
 /* CONTEUDO DA PAGINA */
 .conteudo{
     flex: 1;
-    height: 100%;
+    padding: 0px 10px 0px 10px;
+    max-width: 100%;
     
-    padding: 0 10px 0 10px;
     
 }
 .banner{
@@ -268,16 +299,75 @@ body,html {
     gap: 15px;
     color: var(--cor-texto);
 }
+.carrossel {
+   position: relative;
+}
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.seta-esquerda {
+    left: 10px;
+}
+.seta-direita {
+    right: 10px;
+}
+.carrossel:hover .seta {
+    opacity: 1;
+}
+.seta:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
 .cards{
+    overflow: hidden;
     align-items: center;
     display: flex;
     gap: 25px;
-   
+    min-width: 0;
+    overflow-x: auto;
+  
+  
+    scrollbar-width: none;
+    
 }
+
 .card{
+    
     display: flex;
+    flex: 0 0 160px ;
+    width: 160px;
+    scroll-snap-align: start;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
+}
+.card h3{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card img{
+    width: 160px;
+  
 }
 
 .em-alta{
@@ -298,4 +388,69 @@ body,html {
     gap: 15px;
     color: var(--cor-texto);
 }
+
+
 /* FOOTER */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 20px 20px;
+    color: var(--cor-texto);
+    
+    
+}
+.conteudo-rodape{
+    display: flex;
+
+    gap: 100px;
+    margin-left: 30px;
+}
+.logo-rodape img{
+    height: 120px;
+}
+.informacoes{
+    display: flex;
+    gap: 100px;
+}
+.titulo-informacoes{
+    display: flex;
+    
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+    
+}
+.empresa{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sub-informacoes{
+    display: flex;
+    flex-direction: column;
+}
+.rodape span{
+    background-color: aliceblue;
+    height: 150px;
+    width: 3px;
+    border-radius: 10px;
+}
+.info-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff60;
+    padding: 30px 0 0px;
+}
+
+.apps-contato{
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+}
