@@ -6,8 +6,7 @@
 }
 
 body {
-  background:
-    radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent) #05070c;
+  background: radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent) #05070c;
   color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -32,12 +31,15 @@ body {
   user-select: none;
 }
 
+/* Logo do cabeçalho sem corte ou fundo circular */
 .imagem-logo-cabecalho {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
 }
 
 .texto-marca {
@@ -70,23 +72,24 @@ body {
   color: #121826;
 }
 
-/* Logo Central */
+/* Logo Central sem corte circular ou sombra */
 .caixinha-logo-centro {
   width: 110px;
   height: 110px;
-  border-radius: 50%;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  background: transparent;
 }
 
 .imagem-logo-principal {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  object-fit: contain;
+  box-shadow: none;
 }
 
 .titulo-cartao {
@@ -255,7 +258,7 @@ body {
   box-shadow: 0 2px 8px rgba(98, 27, 156, 0.4);
 }
 
-/* responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
   .cabecalho {
     padding: 16px 20px;

@@ -6,8 +6,7 @@
 }
 
 body {
-  background:
-    radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent) #05070c;
+  background: radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent) #05070c;
   color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -30,14 +29,22 @@ body {
   text-decoration: none;
   color: #ffffff;
   user-select: none;
+  background-color: transparent;
 }
 
+/* Logo do Cabeçalho sem fundo circular ou borda */
 .imagem-logo-cabecalho {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 38px;
+  min-height: 38px;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .texto-marca {
@@ -70,23 +77,31 @@ body {
   color: #121826;
 }
 
-/* Logo Central */
+/* Contêiner da Logo Central sem fundo circular */
 .caixinha-logo-centro {
   width: 110px;
   height: 110px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
 }
 
 .imagem-logo-principal {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+  display: block;
 }
 
 .titulo-cartao {
@@ -187,7 +202,7 @@ body {
 }
 
 .texto-ajuda {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #fff;
   margin-top: 6px;
   text-align: center;
@@ -221,7 +236,7 @@ body {
 }
 
 .destaque-termos {
-  color: #3b0764;
+  color: #a855f7;
   font-weight: 700;
 }
 
@@ -255,7 +270,7 @@ body {
   box-shadow: 0 2px 8px rgba(98, 27, 156, 0.4);
 }
 
-/* responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
   .cabecalho {
     padding: 16px 20px;
