@@ -1,16 +1,16 @@
 /* main */
 
 body {
-    min-height: 120vh;
+    min-height: 125vh;
 }
 
 .conteudo {
-    background-image: url(../imgs/banner-login.png);
-
+    margin-top: 100px;
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 90vh;
+    min-height: 90vh;
+    padding: 50px 0;
 
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ body {
 
     background-color: var(--fundos);
 
-    width: 50%;
+    width: 65%;
 
     border-radius: 30px;
 
@@ -33,9 +33,7 @@ body {
 
     gap: 20px;
 
-    transform: translateY(80px);
-
-    
+    margin-bottom: 100px;
 }
 
 /* CABEÇALHO DO LOGIN */
@@ -121,7 +119,7 @@ form {
 }
 
 .botao-entrar {
-    width: 100%;
+    width: 80%;
     height: 50px;
 
     margin-top: 20px;
@@ -138,6 +136,8 @@ form {
     text-transform: uppercase;
 
     transition: transform 1s;
+
+    align-self: center;
 }
 
 .botao-entrar:hover {
@@ -149,7 +149,7 @@ form {
 /* BOTÃO GOOGLE */
 
 .botao-google {
-    width: 100%;
+    width: 75%;
     height: 40px;
 
     border: none;
@@ -162,6 +162,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
 
     gap: 20px;
 
@@ -170,7 +171,8 @@ form {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25 );
 
     transform: translateY(-15px);
-    
+
+    font-weight: 600;
 }
 
 .botao-google:hover {
@@ -202,4 +204,8 @@ form {
 
 .navegacao p {
     transform: translate(0px, 8px);
+}
+
+.campo1 {
+    margin-top: 40px;
 }
