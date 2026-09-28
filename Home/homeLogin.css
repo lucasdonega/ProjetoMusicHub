@@ -22,21 +22,21 @@ body,html {
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 8vh;
     position: sticky;
     top: 0;
     z-index: 10;
-    padding: 0 10px 0 0px;
+    padding: 0 10px 0 10px;
     align-items: center;
  
 }
 .logo {
     display:flex;
     align-items: center;
+    gap: 10px;
 }
 .logo img{
-    
-    height: 65px;
+    height: 35px;
 }
 .logo h1{
     color: var(--cor-texto);
@@ -51,6 +51,7 @@ body,html {
     background: transparent;
     color: var(--cor-texto);
     font-size: 15px;
+    
     
 }
 
@@ -75,9 +76,9 @@ body,html {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    width: 40vh;
+    width: 30vh;
     padding: 0 0 0 10px;
-      position: sticky;
+    position: sticky;
     top: 10vh;
     height: 90vh;
     align-self: flex-start;
@@ -236,21 +237,24 @@ body,html {
     flex: 1;
     padding: 0px 10px 0px 10px;
     max-width: 100%;
+
     
     
 }
 .banner{
     position: relative;
     width: 100%;
+  
 }
 .banner img{
     border-radius: 10px;
     width: 100%;
     display: block;
+    height: 400px;
  }
  .conteudo-banner{
     position: absolute;
-    bottom: 30px; /* Distancia a parte de baixo*/
+    bottom: 80px; /* Distancia a parte de baixo*/
     left: 25px;/* Distancia a esqueerda*/
     z-index: 2;/* Garante que fique por cima de imagem*/
     display: flex;
@@ -267,7 +271,7 @@ body,html {
 .titulo h2{
     
     background-color: transparent;
-    font-size:40px;
+    font-size:70px;
 }
 .titulo p{
     background-color: transparent;
@@ -283,7 +287,7 @@ body,html {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -390,67 +394,56 @@ body,html {
 }
 
 
-/* FOOTER */
-.rodape{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 20px 20px 20px;
-    color: var(--cor-texto);
-    
-    
-}
-.conteudo-rodape{
-    display: flex;
+/*  RESPONSIVIDADE  */
+/*  480px (celular), 768px (tablet), 1024px (notebook) e 1280px (desktop).  
 
-    gap: 100px;
-    margin-left: 30px;
-}
-.logo-rodape img{
-    height: 120px;
-}
-.informacoes{
-    display: flex;
-    gap: 100px;
-}
-.titulo-informacoes{
-    display: flex;
-    
-    gap: 10px;
-    margin-top: 30px;
-    font-size: 15px;
-    
-}
-.empresa{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    
-}
-.contato{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.sub-informacoes{
-    display: flex;
-    flex-direction: column;
-}
-.rodape span{
-    background-color: aliceblue;
-    height: 150px;
-    width: 3px;
-    border-radius: 10px;
-}
-.info-final{
-    display: flex;
-    justify-content: center;
+@media(min-width: 480px) {
+
+
+/*HEADER
+.cabecalho{
     align-items: center;
-    color: #ffffff60;
-    padding: 30px 0 0px;
+    width: 100%;
+    height: 5vh;
+    max-width: 100vh;
+    padding: 0 10px 0 10px;
+}
+.logo img{
+    height: 20px;
+}
+.logo h1{
+    color: var(--cor-texto);
+    font-size: 15px;
+}
+.navegacao-header input{
+    width: 150px;
+    height: 20px;
+    border-radius: 25px;
+    background: transparent;
+    color: var(--cor-texto);
+    font-size: 10px;
+}
+.perfil{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+.sobre-nos{
+    font-size: 10px;
+}
+.perfil i{
+    font-size: 25px;
+}
+.divisao{
+    
 }
 
-.apps-contato{
-    display: flex;
-    font-size: 25px;
-    gap: 20px;
+
+/* MENU LATERAL 
+.menu-lateral{
+    height: 100%;
+  
 }
+}
+ */
