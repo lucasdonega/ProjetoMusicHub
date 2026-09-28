@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   background:
-    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(60, 70, 110, 0.35), transparent),
+    radial-gradient(ellipse 900px 500px at 50% 50%, #6229d4, transparent)
     #05070c;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ body {
 .painel {
   width: 100%;
   max-width: 600px;
-  background-color: #a8afc2;
+  background-color: #000;
   border-radius: 18px;
   padding: 28px 36px 20px;
   box-shadow: 0 0 40px rgba(70, 100, 200, 0.25);
@@ -109,7 +109,7 @@ body {
 .coluna-titulo {
   font-size: 13px;
   font-weight: 700;
-  color: #1c1e28;
+  color: #fff;
 }
 
 .coluna-usuario {
@@ -136,12 +136,12 @@ body {
 .nome-usuario {
   font-size: 13px;
   font-weight: 700;
-  color: #191b23;
+  color: #fff;
 }
 
 .data-edicao {
   font-size: 11px;
-  color: #454857;
+  color: #fff;
 }
 
 .acao,
@@ -177,16 +177,16 @@ body {
 }
 
 .botao-editar {
-  background: linear-gradient(180deg, #0088aa 0%, #005f77 100%);
+  background: linear-gradient(180deg, #7834ff 0%, #5625b8 100%);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 95, 119, 0.4);
+  box-shadow: 0 4px 12px rgba(100, 23, 189, 0.4);
   min-width: 148px;
 }
 
 .botao-editar:hover {
-  background: linear-gradient(180deg, #0099be 0%, #006c88 100%);
+  background: linear-gradient(180deg, #662cd8 0%, #40198d 100%);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0, 95, 119, 0.5);
+  box-shadow: 0 6px 16px rgba(134, 63, 226, 0.5);
 }
 
 @media (max-width: 480px) {

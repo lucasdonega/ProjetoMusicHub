@@ -179,14 +179,14 @@ body {
 .botao-editar {
   background: linear-gradient(180deg, #7834ff 0%, #5625b8 100%);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 95, 119, 0.4);
+  box-shadow: 0 4px 12px rgba(100, 23, 189, 0.4);
   min-width: 148px;
 }
 
 .botao-editar:hover {
   background: linear-gradient(180deg, #662cd8 0%, #40198d 100%);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0, 95, 119, 0.5);
+  box-shadow: 0 6px 16px rgba(134, 63, 226, 0.5);
 }
 
 @media (max-width: 480px) {
