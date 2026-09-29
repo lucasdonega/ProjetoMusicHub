@@ -212,13 +212,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    align-items: center;
+    text-align: center;
+    width: 200px;
 }
 
 .contato {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: center;
 }
 
 .sub-informacoes {
