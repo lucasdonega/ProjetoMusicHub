@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-.cabecalho .navegacao #entrar {
+.cabecalho .navegacao #voltar {
     border: none;
     border-radius: 25px;
 
@@ -60,7 +60,7 @@ body {
     color: var(--cor-secundaria);
 }
 
-.cabecalho .navegacao #entrar:hover {
+.cabecalho .navegacao #voltar:hover {
     cursor: pointer;
     background-color: var(--cor-destaque);
     color: var(--cor-texto);
@@ -415,11 +415,11 @@ body {
         width: 100%;
     }
 
-    .cabecalho .navegacao #inscrever, .cabecalho .navegacao #entrar {
+    .cabecalho .navegacao #inscrever, .cabecalho .navegacao #voltar {
         font-size: 18px;
     }
 
-    .cabecalho .navegacao #entrar {
+    .cabecalho .navegacao #voltar {
         width: 100%;
         padding: 10px 0;
     }
