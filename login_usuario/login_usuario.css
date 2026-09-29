@@ -285,6 +285,7 @@ form {
     }
 
     header {
+        margin-top: 20px;
         flex-direction: column;
     }
 
@@ -320,7 +321,6 @@ form {
 }
 
 @media (max-width: 460px) {
-
     
 
     .login {
@@ -348,6 +348,7 @@ form {
     }
 
     header {
+        margin-top: 20px;
         flex-direction: column;
     }
 
