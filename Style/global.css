@@ -41,12 +41,8 @@ a {
 .cabecalho {
     padding: 30px;
 }
-.navegacao #entrar {
+.navegacao #voltar {
     color: #000000;
-}
-
-.navegacao #inscrever {
-    color: var(--cor-texto);
 }
 
 /* BANNER PRINCIPAL */

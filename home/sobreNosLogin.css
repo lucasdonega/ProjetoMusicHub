@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-.cabecalho .navegacao #entrar {
+.cabecalho .navegacao #voltar {
     border: none;
     border-radius: 25px;
 
@@ -49,18 +49,7 @@ body {
 
 }
 
-.cabecalho .navegacao #inscrever {
-    font-size: 25px;
-    align-items: center;
-}
-
-.cabecalho .navegacao #inscrever:hover {
-    cursor: pointer;
-    transform: translateY(-3px);
-    color: var(--cor-secundaria);
-}
-
-.cabecalho .navegacao #entrar:hover {
+.cabecalho .navegacao #voltar:hover {
     cursor: pointer;
     background-color: var(--cor-destaque);
     color: var(--cor-texto);
@@ -212,13 +201,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    text-align: center;
+    width: 200px;
+    align-items: center;
 }
 
 .contato {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: center;
+    text-align: center;
 }
 
 .sub-informacoes {
@@ -401,6 +394,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
     .cabecalho .logo-cabecalho img {
         height: 45px;
     }
@@ -415,11 +409,7 @@ body {
         width: 100%;
     }
 
-    .cabecalho .navegacao #inscrever, .cabecalho .navegacao #entrar {
-        font-size: 18px;
-    }
-
-    .cabecalho .navegacao #entrar {
+    .cabecalho .navegacao #voltar {
         width: 100%;
         padding: 10px 0;
     }
