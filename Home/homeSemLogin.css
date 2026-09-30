@@ -43,24 +43,37 @@ body,html {
     font-size: 25px;
 }
 
-
-.navegacao-header input{
-    width: 500px;
-    height: 30px;
-    border-radius: 25px;
-    background: transparent;
-    color: var(--cor-texto);
-    font-size: 15px;
-    
-    
+.busca {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
 }
 
-.perfil{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-
+.busca i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  pointer-events: none;    
+  transition: color 0.2s;
 }
+
+.busca input {
+  width: 100%;
+  height: 30px;
+  padding: 0 16px 0 46px;   
+  border: 1px solid #ffffff60;
+  border-radius: 500px;     
+  color: var(--cor-texto);
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.busca input::placeholder {
+  color: #ffffff;
+}
+
 
 .sobre-nos{
     font-size: 15px;
@@ -98,7 +111,7 @@ body,html {
     width: 30vh;
     padding: 0 0 0 10px;
     position: sticky;
-    top: 10vh;
+    top: 8vh;
     height: 90vh;
     align-self: flex-start;
     overflow-y: auto;
@@ -169,23 +182,6 @@ body,html {
     background-color: transparent;
 }
 
-.minha-playlist{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 5px;
-    color: var(--cor-texto);
-    gap: 5px;
-}
-.add-playlist{
-    display: flex;
-    gap: 130px;
-    font-size: 18px;
-    align-items: center; 
-    color: var(--cor-texto); 
-}
-.add-playlist i:hover{
-    color:var(--cor-destaque) ;
-}
 
 /* CONTEUDO DA PAGINA */
 .conteudo{
@@ -330,13 +326,13 @@ body,html {
 }
 
 .em-alta{
-        display: flex;
+    display: flex;
     flex-direction: column;
     gap: 15px;
     color: var(--cor-texto);
 }
 .sugestoes{
-        display: flex;
+    display: flex;
     flex-direction: column;
     gap: 15px;
     color: var(--cor-texto);
@@ -390,9 +386,7 @@ body,html {
 .perfil i{
     font-size: 30px;
 }
-.divisao{
-    
-}
+
 
 
 /* MENU LATERAL */
