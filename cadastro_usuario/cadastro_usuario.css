@@ -19,6 +19,12 @@ header {
     padding: 20px 100px 0 100px;
 
     width: 100%;
+
+
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(20px);
+
 }
 
 .conteudo {
@@ -217,6 +223,21 @@ form {
     font-size: 1.2em;
 }
 
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login span {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
+}
+
+
 .ou {
     text-align: center;
     font-size: 1.2em;
@@ -279,6 +300,7 @@ form {
     .cadastro img {
         height: 90px;
     }
+
     .cadastro {
         width: 60%;
         padding: 80px 120px 80px 120px;
@@ -312,15 +334,15 @@ form {
         flex: 1 1 0;
         min-width: 0;
         transform: translateY(-20px);
-        
+
     }
 
     .campo1,
     .campo2 {
         flex-wrap: nowrap;
         gap: 14px;
-        
-        
+
+
     }
 
 
@@ -362,15 +384,15 @@ form {
     .campo2 .campo {
         flex: 1 1 0;
         min-width: 0;
-        
+
     }
 
     .campo1,
     .campo2 {
         flex-wrap: nowrap;
         gap: 14px;
-        
-        
+
+
     }
 
 }
@@ -380,6 +402,7 @@ form {
     .cadastro-cabecalho img {
         display: none;
     }
+
 
     .cadastro {
         width: 80%;
@@ -482,10 +505,6 @@ form {
         margin-top: 8px;
     }
 
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
 
     header p {
         margin-top: 40px;
@@ -503,12 +522,19 @@ form {
 
 @media (max-width: 460px) {
 
+    .navegacao {
+        display: none;
+    }
+
     .conteudo {
-        justify-content: center;
+        margin-top: -50px;
+
         min-height: calc(100vh - 100px);
     }
 
     .cadastro {
+
+        margin-top: 20px;
         padding: 28px 16px;
         gap: 24px;
         font-size: 0.8em;
@@ -540,7 +566,7 @@ form {
 
     .botao-entrar,
     .botao-google {
-        height: 44px;
+        height: 28px;
     }
 }
 
@@ -549,7 +575,7 @@ form {
 
     .conteudo {
         justify-content: center;
-        min-height: calc(100vh - 150px);
+        min-height: calc(100vh - 100px);
     }
 
     h1 {
@@ -564,11 +590,27 @@ form {
         padding: 28px 16px;
         gap: 24px;
         font-size: 0.6em;
+        transform: translateY(-50px);
+    }
+
+    .cabecalho img {
+        height: 25px;
+        transform: translateY(-20px);
+    }
+
+    .cadastro-cabecalho {
+        height: 40px;
     }
 
     .cadastro-cabecalho h1 {
         font-size: 1.4em;
+        
     }
+
+    .botao-entrar {
+    height: 31px;      
+    flex-shrink: 0;    
+}
 
     .navegacao p {
         transform: translateY(-25px);
@@ -587,7 +629,7 @@ form {
     }
 
     .ou {
-        transform: translateY(-35px);
+        transform: translateY(-29px);
     }
 
     .botao-google {
@@ -611,13 +653,11 @@ form {
 
     }
 
-    .botao-entrar,
-    .botao-google {
-        height: 44px;
-
+    .botao-google img {
+        height: 22px;
     }
 
-    .botao-entrar {
-        margin-bottom: 10px;
+    .login {
+        transform: translateY(-10px);
     }
 }
