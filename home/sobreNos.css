@@ -260,12 +260,12 @@ body {
 
 
 /* RESPONSIVIDADE */
-/*Celular 480px  Tablet 760px  Computador 1024px*/
+/*Celular: 480px  Tablet: 760px  Computador: 1280px*/
 
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
     body {
         overflow-x: hidden;
     }
@@ -321,6 +321,8 @@ body {
         gap: 80px;
     }
 }
+
+
 
 @media (max-width: 760px) {
     .cabecalho {
@@ -402,6 +404,8 @@ body {
         display: none;
     }
 }
+
+
 
 @media (max-width: 480px) {
     .cabecalho .logo-cabecalho img {
