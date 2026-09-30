@@ -1,10 +1,16 @@
 const botaoIncrever = document.getElementById("increver");
-const botaoEntrar = document.getElementById("entrar");
+const botaoVoltar = document.getElementById("entrar");
 
-botaoIncrever.addEventListener("click", function() {
+botaoIncrever.addEventListener("click", function(event) {
+
+    event.preventDefault();
+
     window.location.href = "cadastro_usuario.html";
 });
 
-botaoEntrar.addEventListener("click", function() {
+botaoVoltar.addEventListener("click", function(event) {
+
+    event.preventDefault();
+
     window.location.href = "homeLogin.html";
 });
