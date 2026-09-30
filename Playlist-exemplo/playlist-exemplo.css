@@ -62,7 +62,7 @@ body {
 }
 
 
-.container-adicionar {
+.caixinha-adicionar {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -109,7 +109,7 @@ body {
 }
 
 
-.container-imagem {
+.caixinha-imagem {
   width: 60px;
   height: 60px;
   border-radius: 12px; 
