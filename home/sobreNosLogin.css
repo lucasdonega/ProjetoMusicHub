@@ -125,18 +125,12 @@ body {
 
 /* INFORMAÇÃO */
 
-.informacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 70px;
-}
-
 .informacao .icones {
-    width: 250px;
+    width: 280px;
     display: flex;
     flex-direction: column;
 
+    text-align: center;
 }
 
 .informacao .icones img {
@@ -153,6 +147,14 @@ body {
     font-size: 20px;
 }
 
+.alinhamento {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    gap: 30px;
+}
 
 /* RODAPE */
 
@@ -170,6 +172,9 @@ body {
 
     gap: 200px;
     margin-left: 20px;
+
+    text-align: center;
+    align-items: center;
 }
 
 .logo-rodape {
@@ -297,7 +302,7 @@ body {
         max-width: 45%;
     }
 
-    .informacao {
+    .alinhamento {
         padding: 50px 4%;
         flex-wrap: wrap;
         gap: 30px;
@@ -359,7 +364,7 @@ body {
         margin-top: 30px;
     }
 
-    .informacao {
+    .alinhamento {
         padding: 40px 20px;
         justify-content: center;
     }
