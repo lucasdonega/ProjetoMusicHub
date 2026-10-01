@@ -58,34 +58,12 @@ a {
     text-align: center;
     
 }
-.contato{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
-}
-.sub-informacoes{
-    display: flex;
-    flex-direction: column;
-}
-.rodape span{
-    background-color: aliceblue;
-    height: 150px;
-    width: 3px;
-    border-radius: 10px;
-}
-.info-final{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff60;
-    padding: 20px;
-   
+.navegacao #voltar {
+    color: #000000;
 }
 
-.apps-contato{
-    display: flex;
-    font-size: 25px;
-    gap: 20px;
-    padding: 10px;
+/* BANNER PRINCIPAL */
+
+.banner-principal {
+    padding: 70px;
 }
