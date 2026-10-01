@@ -38,12 +38,13 @@ body {
   user-select: none;
 }
 
+
 .imagem-logo-cabecalho {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  object-fit: contain;
+  border: none;
 }
 
 .texto-marca {
@@ -74,10 +75,10 @@ body {
   color: #121826;
 }
 
+
 .caixinha-logo-centro {
   width: 110px;
   height: 110px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,10 +88,9 @@ body {
 .imagem-logo-principal {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
 }
+
 
 .titulo-cartao {
   font-family: 'Montserrat', sans-serif;
