@@ -68,10 +68,11 @@ body {
 
 }
 
+
 /* BANNER PRINCIPAL */
 
 .banner-principal {
-    background-image: url("../imgs/banner_principal\ -\ MusicHub.svg");
+    background-image: url("../img/banner_principal - MusicHub.svg");
     background-size: cover;
 
     height: 34em;

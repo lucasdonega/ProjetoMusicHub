@@ -48,11 +48,24 @@ body {
     font-size: 25px;
 
 }
-
-.cabecalho .navegacao #voltar:hover {
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 120px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    
+}
+.navegacao a{
+    font-size: 20px;
+    font-weight: 600;
+    color:#000000;
+}
+.navegacao:hover {
     cursor: pointer;
     background-color: var(--cor-destaque);
-    color: var(--cor-texto);
     transform: translateY(-3px);
 
 }
@@ -60,7 +73,7 @@ body {
 /* BANNER PRINCIPAL */
 
 .banner-principal {
-    background-image: url("../imgs/banner_principal\ -\ MusicHub.svg");
+    background-image: url("../img/banner_principal\ -\ MusicHub.svg");
     background-size: cover;
 
     height: 34em;

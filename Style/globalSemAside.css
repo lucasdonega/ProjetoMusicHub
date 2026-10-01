@@ -54,3 +54,10 @@ a {
 .banner-principal {
     padding: 70px;
 }
+
+/* footer*/
+.apps-contato{
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+}
