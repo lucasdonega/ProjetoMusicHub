@@ -41,11 +41,11 @@ a {
 .cabecalho {
     padding: 30px;
 }
-.navegacao #voltar {
+.navegacao #inscrever {
     color: #000000;
 }
 
-.navegacao #inscrever {
+.navegacao #voltar {
     color: var(--cor-texto);
 }
 
