@@ -1,0 +1,405 @@
+/* ONFIGURAÇÃO DA PAGINA */
+
+body,html {
+    min-height: 100vh;
+    width: 100%;
+   
+}
+
+.divisao{
+    display: flex;
+    
+}
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+/* CABEÇALHO */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0 10px 0 10px;
+    align-items: center;
+ 
+}
+.logo {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    height: 35px;
+}
+.logo h1{
+    color: var(--cor-texto);
+    font-size: 25px;
+}
+
+.busca {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.busca i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  pointer-events: none;    
+  transition: color 0.2s;
+}
+
+.busca input {
+  width: 100%;
+  height: 30px;
+  padding: 0 16px 0 46px;   
+  border: 1px solid #ffffff60;
+  border-radius: 500px;     
+  color: var(--cor-texto);
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.busca input::placeholder {
+  color: #ffffff;
+}
+
+
+.sobre-nos{
+    font-size: 15px;
+}
+
+.conteudo-direita{
+    display: flex;align-items: center;
+    gap: 50px;
+}
+.login-cadastro{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    height:40px;
+    align-items: center;
+    background-color: var(--cor-texto);
+    border-radius: 20px;
+}
+.login a{
+    color: black;
+    font-weight: 550;
+}
+
+/* MENU LATERAL */
+.menu-lateral{
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    padding: 0 0 0 10px;
+    position: sticky;
+    top: 8vh;
+    height: 90vh;
+    align-self: flex-start;
+    overflow-y: auto;
+    z-index: 5;
+}
+.inicio{
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 250px;
+    height: 45px;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 25px;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+.inicio a{
+    font-size: 20px;
+}
+
+.explorar{
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 250px;
+    height: 45px;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 25px;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.explorar a{
+    font-size: 20px;
+}
+
+.biblioteca{
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 250px;
+    height: 45px;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 25px;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.biblioteca a {
+    font-size: 20px;
+}
+
+.inicio:hover,
+.explorar:hover,
+.biblioteca:hover{
+    background-color: var(--cor-destaque);
+}
+.inicio i,
+.explorar i,
+.biblioteca i{
+    background-color: transparent;
+}
+
+
+/* CONTEUDO DA PAGINA */
+.conteudo{
+    flex: 1;
+    padding: 0px 10px 0px 10px;
+    max-width: 100%;
+
+    
+    
+}
+.banner{
+    position: relative;
+    width: 100%;
+  
+}
+.banner img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    height: 400px;
+ }
+ .conteudo-banner{
+    position: absolute;
+    bottom: 80px; /* Distancia a parte de baixo*/
+    left: 25px;/* Distancia a esqueerda*/
+    z-index: 2;/* Garante que fique por cima de imagem*/
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    
+ }
+ .titulo{
+    display: flex;
+    flex-direction: column;
+     color: var(--cor-texto);
+    background-color: transparent;
+ }
+.titulo h2{
+    
+    background-color: transparent;
+    font-size:70px;
+}
+.titulo p{
+    background-color: transparent;
+    font-size: 20px;
+}
+.btn-ouvir{
+    display: flex;
+    width: 166px;
+    height: 48px;
+    font-size: 16px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.musicas{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 0 0;
+    gap: 20px;
+}
+.artista{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+.carrossel {
+   position: relative;
+}
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.seta-esquerda {
+    left: 10px;
+}
+.seta-direita {
+    right: 10px;
+}
+.carrossel:hover .seta {
+    opacity: 1;
+}
+.seta:hover {
+    background: rgba(0, 0, 0, 0.85);
+}
+.cards{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    min-width: 0;
+    overflow-x: auto;
+  
+  
+    scrollbar-width: none;
+    
+}
+
+.card{
+    
+    display: flex;
+    flex: 0 0 160px ;
+    width: 160px;
+    scroll-snap-align: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.card h3{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card img{
+    width: 160px;
+  
+}
+
+.em-alta{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+.sugestoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+.albuns{
+        display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-texto);
+}
+
+
+/*  RESPONSIVIDADE  */
+/*  480px (celular), 768px (tablet), 1024px (notebook) e 1280px (desktop).  */
+
+@media(max-width: 1280px) {
+
+
+/*HEADER*/
+.cabecalho{
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    max-width: 100vh;
+    padding: 0 10px 0 10px;
+}
+.logo img{
+    height: 20px;
+}
+.logo h1{
+    color: var(--cor-texto);
+    font-size: 15px;
+}
+.navegacao-header input{
+    width: 150px;
+    height: 20px;
+    border-radius: 25px;
+    background: transparent;
+    color: var(--cor-texto);
+    font-size: 10px;
+}
+.perfil{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+.sobre-nos{
+    font-size: 10px;
+}
+.perfil i{
+    font-size: 30px;
+}
+
+
+
+/* MENU LATERAL */
+.menu-lateral{
+    height: 100%;
+  
+}
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 480px) {
+
+}
